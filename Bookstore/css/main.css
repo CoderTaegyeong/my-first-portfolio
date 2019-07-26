@@ -1,1 +1,527 @@
+@charset "utf-8";
+/* CSS Document */
 
+/*--Solution for white space showing up for the banner--*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/*--Top--*/
+header {
+    width: 100%;
+}
+
+.top {
+    background-color: black;
+}
+
+.logo {
+    padding-left: 750px;
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+.top_menu {
+    padding-left: 530px;
+    padding-bottom: 20px;
+}
+
+.top_menu a {
+    color: #F7D92B;
+    font-size: 19px;
+    padding-left: 60px;
+}
+
+.top_menu a:hover {
+    color: bisque;
+}
+
+/*--Banner with Welcome Text--*/
+.bookstore-wall {
+    position: relative;
+    background-image: url('../images/ivy-wall.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+
+}
+
+.welcome-text {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    top: 16%;
+    left: 15%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.dc-notice {
+    color: beige;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 47%;
+    left: 15%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.buy-btn {
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: bolder;
+    color: darkred;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    position: absolute;
+    top: 75%;
+    left: 27%;
+    background-color: beige;
+    border: none;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+}
+
+.dcbook-contain {
+    display: inline-block;
+    height: 300px;
+}
+
+.dc-book1 {
+    display: block;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 110px;
+    right: 30%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    z-index: 3;
+}
+
+.dc-book1 img {
+    width: 100%;
+}
+
+.dc-book2 {
+    display: block;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 180px;
+    right: 24%;
+    border: none;
+    background: none;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    box-shadow: 0px 2px 10px 0px rgba(82, 30, 30, 0.75);
+    z-index: 2;
+}
+
+.dc-book2 img {
+    width: 100%;
+}
+
+/*--Section1--*/
+.section1 {
+    background-color: antiquewhite;
+    padding-top: 110px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    float: left;
+}
+
+.sect1-title {
+    color: black;
+    font-size: 30px;
+    background-color: antiquewhite;
+    font-family: 'Vollkorn', sans-serif;
+    padding-bottom: 20px;
+    width: 500px;
+    margin-left: 100px;
+}
+
+.photo-contain {
+    background-color: burlywood;
+    padding: 50px;
+    width: 660px;
+    display: inline-block;
+    float: left;
+    margin-left: 100px;
+}
+
+.pop-book1 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+
+.pop-book1 img {
+    width: inherit;
+}
+
+.pop-book2 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+
+.pop-book2 img {
+    width: inherit;
+    height: inherit;
+}
+
+.pop-book3 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+
+.pop-book3 img {
+    width: inherit;
+    height: inherit;
+}
+
+.pop-book4 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+
+.pop-book4 img {
+    width: inherit;
+}
+
+.pop-book5 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+
+.pop-book5 img {
+    width: inherit;
+    height: inherit;
+}
+
+.pop-book6 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+
+.pop-book6 img {
+    width: inherit;
+    height: inherit;
+}
+
+/*--Section1 Part2--*/
+.review {
+    display: inline-block;
+    background-color: inherit;
+    float: left;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*--Section 2--*/
+.section2 {
+    background-color: antiquewhite;
+    padding-top: 280px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    float: left;
+}
+
+.section2-title {
+    font-size: 30px;
+    font-family: 'Vollkorn', sans-serif;
+    padding-bottom: 20px;
+    margin-left: 100px;
+    display:inline-block;
+}
+.see-more1{
+    font-size:23px;
+    font-weight:bolder;
+    font-family:'Amiri';
+    display:inline-block;
+    float:right;
+    margin-right:220px;
+}
+.see-more1 a:hover{
+    color:darkgray;
+}
+.section2-contents {
+    height: 800px;
+    margin-left: 100px;
+    margin-right:80px;
+}
+
+.recom-book1 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+
+.recom-book1 img {
+    width: inherit;
+    height: inherit;
+}
+
+.rcbook-title {
+    font-size: 23px;
+}
+
+.cost {
+    font-size: 20px;
+    color: darkred;
+}
+
+.recom-book2 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+
+.recom-book2 img {
+    width: inherit;
+    height: inherit;
+}
+
+.recom-book3 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+
+.recom-book3 img {
+    width: inherit;
+    height: inherit;
+}
+
+.recom-book4 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+
+.recom-book4 img {
+    width: inherit;
+    height: inherit;
+}
+.recom-book5 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+
+.recom-book5 img {
+    width: inherit;
+    height: inherit;
+}
+
+/*--Buy Button for Section 2 and 3--*/
+.buy-book {
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: bolder;
+    color: darkred;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    width: 50px;
+    background-color: beige;
+    border: 1px solid white;
+}
+
+/*--Section 3--*/
+.section3 {
+    background-color: antiquewhite;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    float: left;
+}
+.section3-title{
+    font-size: 30px;
+    font-family: 'Vollkorn', sans-serif;
+    padding-bottom: 20px;
+    margin-left: 100px;
+}
+.see-more2{
+    font-size:23px;
+    font-weight:bolder;
+    font-family:'Amiri';
+    display:inline-block;
+    float:right;
+    margin-right:220px;
+    margin-top:-50px;
+}
+.see-more2 a:hover{
+    color:darkgray;
+}
+.section3-contents {
+    height: 800px;
+    margin-left: 100px;
+}
+.new-title{
+    font-size:23px;
+}
+.new-book1 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+.new-book1 img{
+    width: inherit;
+    height: inherit;
+}
+.new-book2 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+.new-book2 img{
+    width: inherit;
+    height: inherit;
+}
+.new-book3 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+.new-book3 img{
+    width: inherit;
+    height: inherit;
+}
+.new-book4 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+.new-book4 img{
+    width: inherit;
+    height: inherit;
+}
+.new-book5 {
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 130px;
+}
+.new-book5 img{
+    width: inherit;
+    height: inherit;
+}
+/*--Footer--*/
+footer{
+    background-color:black;
+    color:antiquewhite;
+    width:100%;
+    height:280px;
+    float:left;
+}
+footer img{
+    margin-top:50px;
+    margin-bottom:15px;
+    margin-left:180px;
+}
+.address{
+    margin-left:180px;
+    display:inline-block;
+}
+.discover{
+    display:inline-block;
+    margin-left:600px;
+}
+#dis-title{
+    font-weight:bolder;
+    color:#F7D92B;
+}
+.dis-contents a{
+    color:antiquewhite;
+}
+#quick-title{
+    font-weight:bolder;
+    color:#F7D92B;
+}
+.quicklinks{
+    display:inline-block;
+    margin-left:600px;
+}
+.quicklinks a{
+    color:antiquewhite;
+}
+/*--Copyright--*/
+.copyright{
+    color:lightgray;
+    font-family:'Times New Roman', sans-serif;
+    padding-top:85px;
+    text-align:center;
+    background-color:black;
+    width:100%;
+    height:70px;
+}
