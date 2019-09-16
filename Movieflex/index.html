@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Red+Hat+Display|Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cssslider_files/csss_engine1/style.css">
+<!--[if IE]><link rel="stylesheet" href="cssslider_files/csss_engine1/ie.css"><![endif]-->
+<!--[if lte IE 9]><script type="text/javascript" src="cssslider_files/csss_engine1/ie.js"></script><![endif]-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Target your .container, .wrapper, .post, etc.
+        $("#vid").fitVids();
+    });
+</script>
+
+<head>
+    <title>Movieflex</title>
+    <style>
+        html {
+            background-color: black;
+            background-image: url("img/background.png");
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .page-container {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            left: 0;
+            top: 0;
+            width: 100%;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+
+        /*--Header--*/
+        .header-container {
+            margin-top: 0;
+            width: 100%;
+            min-height: 300px;
+            height: 560px;
+            background-image: url(img/bg2.jpg);
+            background-size: cover;
+        }
+
+        .top-nav {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.85);
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo-header {
+            display: inline;
+            float: left;
+            color: white;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 2em;
+            padding: 10px;
+            width: 200px;
+            height: 60px;
+            line-height: 1.8em;
+            cursor: default;
+        }
+        
+        /*--Navigation Menu--*/
+        .nav-links {
+            display: inline-flex;
+            margin-top: 25px;
+            flex-direction: row;
+            float: right;
+            width: 70%;
+        }
+
+        .nav-links a {
+            margin: auto;
+        }
+
+        .links-menu {
+            transition: transform 0.25s;
+            margin: auto;
+        }
+
+        .links-menu:hover {
+            transform: scale(1.2);
+        }
+
+        /*--Header Image--*/
+        .head-image {
+            width: 100%;
+            min-height: 300px;
+        }
+
+        .image-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        .overlay-header {
+            font-weight: bold;
+            font-size: 4em;
+            text-transform: uppercase;
+            font-family: "Oswald", sans-serif;
+            font-weight: 700;
+        }
+
+        .overlay-subtext {
+            font-size: 1.5em;
+        }
+
+        /*--Contents--*/
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            min-height: 300px;
+        }
+
+        .section-header {
+            font-family: "Oswald", sans-serif;
+            font-weight: 700;
+            font-size: 2em;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .section-subtext {
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+
+        .top-section {
+            background-color: rgb(30, 30, 30);
+            width: 70%;
+            padding: 20px;
+            min-height: 300px;
+            z-index: 0;
+        }
+
+        /*--Youtube Embed--*/
+        .video-container {
+            background-color: rgb(30, 30, 30);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            min-height: 300px;
+        }
+
+
+        /*--Middle Section--*/
+        .middle-section {
+            background-color: rgb(30, 30, 30);
+            width: 70%;
+            padding: 20px;
+            min-height: 300px;
+        }
+
+        /*--Bottom Section--*/
+        .bottom-section {
+            background-color: rgb(30, 30, 30);
+            width: 70%;
+            padding: 20px;
+            min-height: 300px;
+        }
+
+        /*--Footer--*/
+        .footer-container {
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            padding-top: 40px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            height: 150px;
+            margin-left: 70px;
+            flex-grow: 1;
+        }
+
+        .footer-text {
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            flex-grow: 1;
+            margin-bottom: 20px;
+            font-size: 0.8em;
+        }
+
+        .logo-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            text-align: center;
+            margin-top: 40px;
+            margin-right: 70px;
+            flex-grow: 1;
+            width: 100px;
+            height: 80px;
+            color: white;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 2em;
+            padding: 10px;
+            cursor: default;
+        }
+
+        .footer-text-responsive {
+            display: none;
+            flex-direction: row;
+            justify-content: flex-end;
+            text-align: center;
+            margin-top: 100px;
+            margin-right: 100px;
+            flex-grow: 1;
+            width: 80px;
+            height: 30px;
+            color: white;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 0.6em;
+            padding: 3px;
+            cursor: default;
+        }
+        
+        /*--Go to Top Button--*/
+        .nav-btn-toTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            font-weight: bold;
+            z-index: 99999;
+            cursor:pointer;
+        }
+        /*--Menu Button--*/
+        .icon {
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            background-color: rgb(0, 0, 0);
+            float: right;
+            text-align: right;
+            margin-right: 8px;
+            cursor:pointer;
+        }
+
+        .resp-menu {
+            /*toggle display: flex*/
+            display: none;
+            position: fixed;
+            flex-direction: column;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: black;
+            z-index: 9999999;
+        }
+
+        .logo-header-resp {
+            display: block;
+            position: fixed;
+            color: white;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1em;
+            padding: 10px 5px 5px 5px;
+            width: 100px;
+            height: 50px;
+            line-height: 1.8em;
+            cursor: default;
+            top: 5px;
+            left: 0px;
+            z-index: 999999999;
+        }
+
+        .resp-links-container {
+            display: none;
+        }
+
+        .youtube-container {
+            box-sizing: content-box;
+        }
+        
+        /*--Responsive--*/
+        @media screen and (max-width: 800px) {
+
+            .links-menu,
+            .head-image,
+            .logo-header,
+            .logo-footer,
+            .footer-text {
+                display: none;
+            }
+
+            .logo-header-resp {
+                display: block;
+            }
+
+            .top-nav {
+                height: 50px;
+            }
+
+            .resp-menu {
+                display: flex;
+            }
+
+            .header-container {
+                margin-top: 0;
+                width: 100%;
+                min-height: 50px;
+                height: 50px;
+                background: rgb(70, 70, 70);
+            }
+
+            .links {
+                margin-left: 10px;
+                width: 32px;
+                font-size: 0.7em;
+            }
+
+            .footer-text-responsive {
+                display: flex;
+            }
+
+            .top-section,
+            .middle-section,
+            .bottom-section {
+                width: 90%;
+                padding: 10px;
+                font-size: 0.95em;
+            }
+
+            .nav-btn-toTop {
+                display: block;
+            }
+
+            .csslider1 {
+                z-index: 1;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="nav-btn-toTop" onclick="toTop();">&uarr;</div>
+        <!--Header-->
+        <div class="header-container">
+            <div class="top-nav">
+                <div class="logo-header">Movieflex&reg;</div>
+                <div class="resp-menu">
+                    <div class="logo-header-resp">Movieflex&reg;</div>
+                    <div class="nav-btn-menu" onclick="menu();">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="resp-links-container" id="navlink">
+                        <div class="links-resp"><a href="#">Home</a></div>
+                        <div class="links-resp"><a href="#">What&apos;s New?</a></div>
+                        <div class="links-resp"><a href="#">Trending</a></div>
+                        <div class="links-resp"><a href="#">Category</a></div>
+                        <div class="links-resp"><a href="#">About Movieflex</a></div>
+                        <div class="links-resp"><a href="#">Support</a></div>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <div class="links-menu"><a href="#">Home</a></div>
+                    <div class="links-menu"><a href="#">What&apos;s New?</a></div>
+                    <div class="links-menu"><a href="#">Trending</a></div>
+                    <div class="links-menu"><a href="#">Category</a></div>
+                    <div class="links-menu"><a href="#">About Movieflex</a></div>
+                    <div class="links-menu"><a href="#">Support</a></div>
+                </div>
+            </div>
+
+            <!--Header Image-->
+            <div class="head-image">
+                <div class="image-overlay">
+                    <div class="overlay-header">Over 9000 Movies</div>
+                    <div class="overlay-subtext">Anytime, Anywhere</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contents-->
+        <div class="content-container">
+            <div class="top-section">
+                <div class="section-header">Now Playing</div>
+                <div class="section-subtext">You're in the first row!</div>
+
+                <!--Youtube Embed-->
+                <div class="youtube-container">
+                    <div class="video-container" id="vid">
+                        <iframe width="695" height="391" src="https://www.youtube.com/embed/pU8-7BX9uxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!--Image Slider-->
+                <div class="section-header">Popular Movies</div>
+                <div class="section-subtext">Maybe take a look?</div>
+                <div class="csslider1 autoplay ">
+                    <input name="cs_anchor1" id="cs_slide1_0" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_1" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_2" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_3" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_4" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_5" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_6" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_7" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_8" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_play1" type="radio" class="cs_anchor" checked>
+                    <input name="cs_anchor1" id="cs_pause1_0" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_1" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_2" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_3" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_4" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_5" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_6" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_7" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_8" type="radio" class="cs_anchor pause">
+                    <ul>
+                        <li class="cs_skeleton"><img src="cssslider_files/csss_images1/1.jpg" style="width: 100%;"></li>
+                        <li class="num0 img slide"> <img src="cssslider_files/csss_images1/1.jpg" alt="Interstellar" title="Interstellar" /></li>
+                        <li class="num1 img slide"> <img src="cssslider_files/csss_images1/7.jpg" alt="Get Out" title="Get Out" /></li>
+                        <li class="num2 img slide"> <img src="cssslider_files/csss_images1/2.jpg" alt="Hereditary" title="Hereditary" /></li>
+                        <li class="num3 img slide"> <img src="cssslider_files/csss_images1/3.jpg" alt="John Wick 3" title="John Wick 3" /></li>
+                        <li class="num4 img slide"> <img src="cssslider_files/csss_images1/4.jpg" alt="Bruce Almighty" title="Bruce Almighty" /></li>
+                        <li class="num5 img slide"> <img src="cssslider_files/csss_images1/5.jpg" alt="Coraline" title="Coraline" /></li>
+                        <li class="num6 img slide"> <img src="cssslider_files/csss_images1/6.jpg" alt="Delicatessen" title="Delicatessen" /></li>
+                        <li class="num7 img slide"> <img src="cssslider_files/csss_images1/9.jpg" alt="Mad Max" title="Mad Max" /></li>
+                        <li class="num8 img slide"> <img src="cssslider_files/csss_images1/8.jpg" alt="Howl&apos;s Moving Castle" title="Howl&apos;s Moving Castle" /></li>
+                    </ul>
+                    <div class="cs_engine"><a href="http://cssslider.com">bootstrap slider</a> by cssSlider.com v2.1</div>
+                    <div class="cs_description">
+                        <label class="num0"><span class="cs_title"><span class="cs_wrapper">Interstellar</span></span></label>
+                        <label class="num1"><span class="cs_title"><span class="cs_wrapper">Get Out</span></span></label>
+                        <label class="num2"><span class="cs_title"><span class="cs_wrapper">Hereditary</span></span></label>
+                        <label class="num3"><span class="cs_title"><span class="cs_wrapper">John Wick 3</span></span></label>
+                        <label class="num4"><span class="cs_title"><span class="cs_wrapper">Bruce Almighty</span></span></label>
+                        <label class="num5"><span class="cs_title"><span class="cs_wrapper">Coraline</span></span></label>
+                        <label class="num6"><span class="cs_title"><span class="cs_wrapper">Delicatessen</span></span></label>
+                        <label class="num7"><span class="cs_title"><span class="cs_wrapper">Mad Max</span></span></label>
+                        <label class="num8"><span class="cs_title"><span class="cs_wrapper">Howl's Moving Castle</span></span></label>
+                    </div>
+                    <div class="cs_play_pause">
+                        <label class="cs_play" for="cs_play1"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num0" for="cs_pause1_0"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num1" for="cs_pause1_1"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num2" for="cs_pause1_2"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num3" for="cs_pause1_3"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num4" for="cs_pause1_4"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num5" for="cs_pause1_5"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num6" for="cs_pause1_6"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num7" for="cs_pause1_7"><span><i></i><b></b></span></label>
+                        <label class="cs_pause num8" for="cs_pause1_8"><span><i></i><b></b></span></label>
+                    </div>
+                    <div class="cs_arrowprev">
+                        <label class="num0" for="cs_slide1_0"><span><i></i><b></b></span></label>
+                        <label class="num1" for="cs_slide1_1"><span><i></i><b></b></span></label>
+                        <label class="num2" for="cs_slide1_2"><span><i></i><b></b></span></label>
+                        <label class="num3" for="cs_slide1_3"><span><i></i><b></b></span></label>
+                        <label class="num4" for="cs_slide1_4"><span><i></i><b></b></span></label>
+                        <label class="num5" for="cs_slide1_5"><span><i></i><b></b></span></label>
+                        <label class="num6" for="cs_slide1_6"><span><i></i><b></b></span></label>
+                        <label class="num7" for="cs_slide1_7"><span><i></i><b></b></span></label>
+                        <label class="num8" for="cs_slide1_8"><span><i></i><b></b></span></label>
+                    </div>
+                    <div class="cs_arrownext">
+                        <label class="num0" for="cs_slide1_0"><span><i></i><b></b></span></label>
+                        <label class="num1" for="cs_slide1_1"><span><i></i><b></b></span></label>
+                        <label class="num2" for="cs_slide1_2"><span><i></i><b></b></span></label>
+                        <label class="num3" for="cs_slide1_3"><span><i></i><b></b></span></label>
+                        <label class="num4" for="cs_slide1_4"><span><i></i><b></b></span></label>
+                        <label class="num5" for="cs_slide1_5"><span><i></i><b></b></span></label>
+                        <label class="num6" for="cs_slide1_6"><span><i></i><b></b></span></label>
+                        <label class="num7" for="cs_slide1_7"><span><i></i><b></b></span></label>
+                        <label class="num8" for="cs_slide1_8"><span><i></i><b></b></span></label>
+                    </div>
+                    <div class="cs_bullets">
+                        <label class="num0" for="cs_slide1_0"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/1.jpg" alt="Interstellar" title="Interstellar" /></span></label>
+                        <label class="num1" for="cs_slide1_1"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/7.jpg" alt="Get Out" title="Get Out" /></span></label>
+                        <label class="num2" for="cs_slide1_2"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/2.jpg" alt="Hereditary" title="Hereditary" /></span></label>
+                        <label class="num3" for="cs_slide1_3"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/3.jpg" alt="John Wick 3" title="John Wick 3" /></span></label>
+                        <label class="num4" for="cs_slide1_4"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/4.jpg" alt="Bruce Almighty" title="Bruce Almighty" /></span></label>
+                        <label class="num5" for="cs_slide1_5"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/5.jpg" alt="Coraline" title="Coraline" /></span></label>
+                        <label class="num6" for="cs_slide1_6"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/6.jpg" alt="Delicatessen" title="Delicatessen" /></span></label>
+                        <label class="num7" for="cs_slide1_7"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/9.jpg" alt="Mad Max" title="Mad Max" /></span></label>
+                        <label class="num8" for="cs_slide1_8"> <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/8.jpg" alt="Howl&apos;s Moving Castle" title="Howl&apos;s Moving Castle" /></span></label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Middle Section-->
+            <div class="middle-section">
+                <div class="section-header">Interstellar</div>
+                <div class="section-subtext">Sci-Fi/Drama</div>
+                <p>Interstellar is a 2014 American epic science fiction film directed and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for humanity. </p>
+                <p>In the near future around the American Midwest, Cooper, an ex-science engineer and pilot, is tied to his farming land with his daughter Murph and son Tom. As devastating sandstorms ravage Earth's crops, the people of Earth realize their life here is coming to an end as food begins to run out. Eventually stumbling upon a N.A.S.A. base near Cooper's home, he is asked to go on a daring mission with a few other scientists into a wormhole because of Cooper's scientific intellect and ability to pilot aircraft unlike the other crew members. In order to find a new home while Earth decays, Cooper must decide to either stay, or risk never seeing his children again in order to save the human race by finding another habitable planet. </p>
+                <br>
+                <div class="section-header">Get Out</div>
+                <div class="section-subtext">Horror/Thriller</div>
+
+                <p>Get Out is a 2017 American horror film written and directed by Jordan Peele in his directorial debut. It stars Daniel Kaluuya, Allison Williams, Lil Rel Howery, Bradley Whitford, Caleb Landry Jones, Stephen Root, and Catherine Keener.</p>
+                <p>Chris Washington, a talented young African-American photographer, prepares to meet his Caucasian girlfriend Rose Armitage's parents during a weekend in their Lake Pontaco house. Chris and Rose have been together for five months, and the Armitages are completely unaware that their daughter's sweetheart is black. But when Chris finally meets Rose's mother, a psychiatrist who specializes in hypnosis, and her father, a neurosurgeon, he will soon realize that the family is surrounded by black servants in the total privacy of their magnificent, yet secluded estate in the woods. Little by little, as the friendly and polite ambience gives way to an indistinguishable, rather unrecognizable threat, the unsettling mood coupled with sheer dread will quickly disturb the family's tranquil façade. </p>
+                <br>
+                <div class="section-header">Hereditary</div>
+                <div class="section-subtext">Horror/Thriller</div>
+                <p>Hereditary is a 2018 American supernatural psychological horror drama film written and directed by Ari Aster, in his feature directorial debut. It stars Toni Collette, Alex Wolff, Milly Shapiro and Gabriel Byrne as a family haunted after the death of their secretive grandmother. </p>
+                <p>After the family matriarch passes away, a grieving family is haunted by tragic and disturbing occurrences, and begin to unravel dark secrets. When her mentally ill mother passes away, a woman named Annie (Toni Collette) and her husband (Gabriel Byrne), son (Alex Wolff) and daughter (Milly Shapiro) all mourn her loss. The family turn to different means to handle their grief, including Annie and her daughter both flirting with the supernatural. They each begin to have disturbing, otherworldly experiences linked to the sinister secrets and emotional trauma that have been passed through the generations of their family. Annie is a wealthy model maker with a family history of mental instability. After her elderly mother passes away, Annie, her disturbed daughter, Charlie, and, eventually, her teenaged son, Peter, begin to experience strange visions and compulsions, much to the distress of her skeptical husband, Steve. </p>
+            </div>
+
+            <!--Bottom Section-->
+            <div class="bottom-section">
+                <div class="section-header">John Wick 3</div>
+                <div class="section-subtext">Action/Thriller</div>
+                <p>John Wick is an American action thriller media franchise created by Derek Kolstad and owned by Summit Entertainment. Keanu Reeves stars as the eponymous character, John Wick, a retired but deadly hitman seeking vengeance. John Wick: Chapter 3 – Parabellum (also known as John Wick: Chapter 3 or simply John Wick 3) is a 2019 American neo-noir action thriller film starring Keanu Reeves as the titular character. It is the third installment in the John Wick film series, following John Wick (2014) and John Wick: Chapter 2 (2017). The film is directed by Chad Stahelski and written by Derek Kolstad, Shay Hatten, Chris Collins, and Marc Abrams, based on a story by Kolstad. It also stars Halle Berry, Laurence Fishburne, Mark Dacascos, Asia Kate Dillon, Lance Reddick, Anjelica Huston, and Ian McShane. In the film, which takes place one hour after the events of the previous film, ex-hitman John Wick finds himself on the run from legions of assassins after a $14 million contract is put on his head due to his recent actions.</p>
+                <br>
+                <div class="section-header">Mad Max: Fury Road</div>
+                <div class="section-subtext">Action/Thriller</div>
+                <p>Mad Max: Fury Road is a 2015 post-apocalyptic action film co-written, produced, and directed by George Miller. Miller collaborated with Brendan McCarthy and Nico Lathouris on the screenplay. The fourth installment and a revisiting of the Mad Max franchise, it is a joint Australian-American venture produced by Kennedy Miller Mitchell, RatPac-Dune Entertainment, and Village Roadshow Pictures and distributed by Warner Bros. Pictures. The film is set in a post-apocalyptic desert wasteland where petrol and water are scarce commodities. It follows Max Rockatansky (Tom Hardy), who joins forces with Imperator Furiosa (Charlize Theron) to flee from cult leader Immortan Joe (Hugh Keays-Byrne) and his army in an armoured tanker truck, leading to a lengthy road battle.</p>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer-container">
+            <div class="links">
+                <a href="#">Sitemap</a>
+                <a href="#">About Movieflex</a>
+                <a href="#">Support</a>
+                <a href="#">Career</a>
+                <a href="#">DMCA</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-text">&copy; 2019 Movieflex Entertainment Co. Ltd. All rights reserved.</div>
+            <div class="footer-text-responsive">&copy; 2019 Movieflex Entertainment Co. Ltd.</div>
+            <div class="logo-footer">Movieflex&reg;</div>
+        </div>
+    </div>
+</body>
+<script>
+    function menu() {
+        console.log("Menu");
+        var x = document.getElementById("navlink");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        console.log("ok");
+    }
+
+    function toTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</html>
