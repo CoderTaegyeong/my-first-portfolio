@@ -6,7 +6,7 @@ This is a website for my portfolio. Every content on this website is for persona
 Hi, I'm Taegyeong Kim. I'm currently 23 years old, and a college graduate who doesn't have a job experience in Web Design. My major is English. However, I have taking 'Web Design class for Web Publishers' for 6 months. It officially ends on September 30th, but lessons are over. For more information on who I am, please visit https://linkedin.com/in/taegyeong-kim-8521a8179. If you want to talk to me, come to my Twitter account or email address on my LinkedIn page.
 
 ### About Bookstore
-The bookstore website I made is called 'A.Z and Co.' because I was watching Good Omens at that time. 'A.Z and Co.' is the name of the bookstore from Good Omens, an Amazon Prime TV series. We can see the Good Omens' novel at the front of my bookstore website. This website was made before I had knowledge of Responsive Web Design. I worked from July 9th, 2019 to July 17th, 2019.
+The bookstore website I made is called 'A.Z and Co.' because I was watching Good Omens at that time. 'A.Z.Fell and Co.' is the name of the bookstore from Good Omens, an Amazon Prime TV series. We can see the Good Omens' novel at the front of my bookstore website. This website was made before I had knowledge of Responsive Web Design. I worked from July 9th, 2019 to July 17th, 2019.
 
 -Fonts I used: 'Book Antiqua' for the logo, 'Vollkorn' for the menu, buy buttons, section titles, 'Amiri' for the see more buttons, and 'Times New Roman' for the copyright part.
 
