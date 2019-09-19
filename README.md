@@ -1,6 +1,6 @@
 ## Welcome to my Github page!
 
-This is a website for my portfolio. Every content on this website is for personal use. **You cannot edit, use or share my files.** Feel free to explore the contents and report issues if you have problems running files. I'll add more contents once I'm finished making them.
+This is a website for my portfolio. Every content on this website is for personal use. **You cannot edit, use or share my files.** Feel free to explore the contents and report issues if you have problems running files. I'll add more contents once I'm finished making them. I'm currently working on the concrete design of my portfolio website. I'll apply those to this Github page soon.
 
 ### Introduction
 Hi, I'm Taegyeong Kim. I'm currently 23 years old, and a college graduate who doesn't have a job experience in Web Design. My major is English. However, I have taking 'Web Design class for Web Publishers' for 6 months. It officially ends on September 30th, but lessons are over. For more information on who I am, please visit https://linkedin.com/in/taegyeong-kim-8521a8179. If you want to talk to me, come to my Twitter account or email address on my LinkedIn page.
