@@ -24,5 +24,5 @@ This is my first work of Responsive Web Design. I wanted to make a website for m
 
 -Photo Slider: From https://cssslider.com/
 
--JavaScript and Jquery Codes: From searching Google about responsive Youtube video and reponsive web design.
+-JavaScript and Jquery Codes: From searching Google about responsive Youtube video and responsive web design.
 
