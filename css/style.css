@@ -156,8 +156,10 @@ a {
 }
 .title-above-cards{
     font-size: 1.8em;
+    font-family: 'Muli', sans-serif;
     
 }
+
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -177,6 +179,11 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transform: rotateX(60deg) scale(0.7);
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card-middle {
@@ -188,6 +195,11 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transform: rotateX(60deg) scale(0.7);
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card-right {
@@ -199,6 +211,11 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transform: rotateX(60deg) scale(0.7);
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card-left:hover,
