@@ -9,6 +9,7 @@ Hi, I'm Taegyeong Kim. I'm currently 23 years old, and a college graduate who do
 This portfolio website is what I'm making right now. I'm still working on responsiveness. I started making this on September 19th, 2019.
 
 -Animated graphs from https://codepen.io/tamak/pen/hzEer
+
 -Animated hover card effect from https://codepen.io/akhil_001/pen/zoQdaO
 
 ### About Bookstore
