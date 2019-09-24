@@ -8,14 +8,40 @@ Hi, I'm Taegyeong Kim. I'm currently 23 years old, and a college graduate who do
 ### About this website
 This portfolio website is what I'm making right now. I'm still working on responsiveness. I started making this on September 19th, 2019.
 
--Animated graphs from https://codepen.io/tamak/pen/hzEer
+-Original animated graphs from https://codepen.io/tamak/pen/hzEer
 
--Animated hover card effect from https://codepen.io/akhil_001/pen/zoQdaO
+-Original animated hover card effect from https://codepen.io/akhil_001/pen/zoQdaO
 
+## About Photo Works
+1. "Photo Gallery Pamphlet": I made a pamphlet for a photo gallery with Adobe Illustrator CS6. Agora Gallery actually exists: https://www.agora-gallery.com/. Completed on June 4th, 2019.
+
+-Fonts: 'Times New Roman' for the front, 'Myriad Pro' for the back.
+
+-Images: from http://pexels.com
+
+2. UI Design: This was my first UI design work. I made it with Adobe Illustrator CS6. The names of the pieces and the album photos are from Amazon. Completed on July 3th, 2019.
+
+-Fonts: 'Nueva Std' for the main screen with the title, 'Myriad Pro' for the rest.
+
+-Mockup: from https://www.freepik.com/free-vector/modern-mobile-with-abstract-background_1415371.htm#page=1&index=2&query=smartphone
+
+3. "Underwater Fantasy": This was my first Photoshop work. I cut photos, copy&pasted them, and used multiply blend mode. I wanted to make a photo with a mystic atmosphere. Completed on August 14th, 2019.
+
+-Images: from http://pexels.com
+
+4. "Artistic Woman": I cut the woman's face and combined it with a background. Then I made the background black & white, used noise filter on the background, I made a copy of the woman, made it black & white, moved it backward, and erased the front layer. Completed on August 19th, 2019.
+
+-Images: from http://pexels.com
+
+5. "People In Clouds": I cut photos of a lying woman, a woman reading a book, and an Amazon pencil. Then I put them around, I cut clouds, made copies of them, put them front, put pencils behind them and autotoned the photo to look more natural. After I made Underwater Fantasy, I started to make surreal arts using Photoshop. Completed on August 20th, 2019.
+
+-Images: from http://pexels.com
+
+6. "
 ### About Bookstore
 The bookstore website I made is called 'A.Z and Co.' because I was watching Good Omens at that time. 'A.Z.Fell and Co.' is the name of the bookstore from Good Omens, an Amazon Prime TV series. We can see the Good Omens' novel at the front of my bookstore website. This website was made before I had knowledge of Responsive Web Design. I worked from July 9th, 2019 to July 17th, 2019.
 
--Fonts I used: 'Book Antiqua' for the logo, 'Vollkorn' for the menu, buy buttons, section titles, 'Amiri' for the see more buttons, and 'Times New Roman' for the copyright part.
+-Fonts: 'Book Antiqua' for the logo, 'Vollkorn' for the menu, buy buttons, section titles, 'Amiri' for the see more buttons, and 'Times New Roman' for the copyright part.
 
 -Images: Every book image I used is from Amazon, and I made the logo using Adobe Illustrator.
 
