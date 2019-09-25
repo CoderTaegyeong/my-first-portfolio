@@ -6,7 +6,7 @@ This is a website for my portfolio. Every content on this website is for persona
 Hi, I'm Taegyeong Kim. I'm currently 23 years old, and a college graduate who doesn't have a job experience in Web Design. My major is English. However, I have taking 'Web Design class for Web Publishers' for 6 months. It officially ends on September 30th, but lessons are over. For more information on who I am, please visit https://linkedin.com/in/taegyeong-kim-8521a8179. If you want to talk to me, come to my Twitter account or email address on my LinkedIn page.
 
 ## About this website
-This portfolio website is what I'm making right now. I'm still working on responsiveness. I started making this on September 19th, 2019.
+This portfolio website is what I'm making right now. I started making this on September 19th, 2019. **I plan to rewrite almost everything to make it look "my" portfolio without someone else's works. For copyright's sake, I will keep the sources until I finish rewriting this. This will take three days approximately.**
 
 ★Original animated graphs from https://codepen.io/tamak/pen/hzEer
 
