@@ -7,6 +7,11 @@ html {
     color: white;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -19,6 +24,9 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    right: 0;
+    margin: 0;
+    padding: 0;
     left: 0;
     top: 0;
     width: 100%;
@@ -29,6 +37,8 @@ a {
 /*--Header--*/
 .header-container {
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
     min-height: 300px;
     height: 450px;
@@ -54,6 +64,7 @@ a {
 
 .nav-links a {
     margin: auto;
+    font-size: 1.2em;
 }
 
 .links-menu {
@@ -121,14 +132,16 @@ a {
     min-height: 300px;
 }
 
-.section-header {
+.section-head {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 2em;
     margin-top: 20px;
     text-transform: uppercase;
 }
-
+.section-subtitle{
+    font-size: 1.5em;
+}
 .section-subtext {
     font-size: 0.85em;
     margin-bottom: 20px;
@@ -142,126 +155,19 @@ a {
     z-index: 0;
 }
 
-.topsec-text{
-    font-size: 1.2em;
+.sec-text {
+    font-size: 1.1em;
     font-family: 'Muli', sans-serif;
     margin: 30px;
     color: azure;
-}
-.container:hover {
-    cursor: pointer;
-    transform: rotate(0deg) scale(1) translateY(10px);
-    transition: .5s all ease;
-    z-index: 400;
-}
-.title-above-cards{
-    font-size: 1.8em;
-    font-family: 'Muli', sans-serif;
-    
+    text-align: justify;
 }
 
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    perspective: 900px;
-}
-
-.card-left {
-    width: 20%;
-    height: 400px;
-    padding: 8px;
-    border-radius: 4px;
-    background: linear-gradient(#2c3e50, #2980b9);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transform: rotateX(60deg) scale(0.7);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.card-middle {
-    width: 20%;
-    height: 400px;
-    padding: 8px;
-    border-radius: 4px;
-    background: linear-gradient(#000428, #004e92);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transform: rotateX(60deg) scale(0.7);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.card-right {
-    width: 20%;
-    height: 400px;
-    padding: 8px;
-    border-radius: 4px;
-    background: linear-gradient(#182848, #4b6cb7);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transform: rotateX(60deg) scale(0.7);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.card-left:hover,
-.card-middle:hover,
-.card-right:hover {
-    cursor: pointer;
-    transform: rotate(0deg) scale(1) translateY(10px);
-    transition: .5s all ease;
-    z-index: 400;
-}
-
-.card-icon {
-    font-size: 3em;
-}
-
-.card-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.7em;
-}
-
-.card-desc p {
-    font-family: sans-serif;
-    color: white;
-}
-
-.graph-container {
-    display: block;
-    padding: 3.5em;
-}
-
-.grid-view {
-    display: grid;
-    grid-template-columns: min-content min-content min-content;
-    grid-template-rows: min-content min-content min-content min-content;
-    grid-column-gap: 5px;
-    grid-row-gap: 1px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-}
 
 /*--Middle Section--*/
 .middle-section {
     background-color: rgb(30, 30, 30);
-    width: 70%;
+    width: 50%;
     padding: 20px;
     min-height: 100px;
 }
@@ -295,6 +201,11 @@ a {
     font-size: 0.6em;
     padding: 3px;
     cursor: default;
+}
+.email-container{
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Muli', sans-serif;
 }
 
 .nav-btn-toTop {
