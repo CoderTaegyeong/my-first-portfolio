@@ -9,7 +9,7 @@ Hi, I'm Taegyeong Kim. I'm currently 23 years old, and a college graduate who do
 This portfolio website is what I'm making right now. I started making this on September 19th, 2019. I'm working on making and polishing sub pages. Almost finished. Now I'm working on Project page.
 
 ## How to Use
-Open index.html on any browser to see the website. If you plan to download, make sure you put all files in one folder. Do not change the file paths.
+Open index.html on any browser to see the website, or just go to https://codertaegyeong.github.io. If you plan to download, make sure you put all files in one folder. Do not change the file paths.
 
 ## Photo Works
 \1. "Photo Gallery Pamphlet": I made a pamphlet for a photo gallery with Adobe Illustrator CS6. Agora Gallery actually exists: https://www.agora-gallery.com/. Completed on June 4th, 2019.
