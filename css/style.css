@@ -71,14 +71,14 @@ a {
 }
 
 .links-menu {
-    transition: all 0.25s;
+    transition: all 0.60s;
     padding: 15px;
     text-align: center;
     color: white;
 }
 
 .links-menu:hover {
-    background-color: #274060;
+    background-color: darkcyan;
     color: black;
 }
 
