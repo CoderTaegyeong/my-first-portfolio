@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width , initial-scale=1.0">
 
@@ -26,10 +26,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+
     <link href="css/all.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/moveto.js"></script>
 
 </head>
 
@@ -59,6 +60,10 @@
                     <div class="links-resp"><a href="skills.html">Skills</a></div>
                     <div class="links-resp"><a href="about.html">About Me</a></div>
                     <div class="links-resp"><a href="projects.html">Projects</a></div>
+                    <select data-placeholder="Language" id="langsel-mobi" onchange="moveTo('mobile');">
+                      <option value="KO">Korean</option>
+                      <option value="EN">English</option>
+                    </select>
                 </div>
             </div>
             <div class="nav-links">
@@ -66,14 +71,17 @@
                 <div class="links-menu"><a href="skills.html">Skills</a></div>
                 <div class="links-menu"><a href="about.html">About Me</a></div>
                 <div class="links-menu"><a href="projects.html">Projects</a></div>
+                <select data-placeholder="Language" id="langsel-mobi" onchange="moveTo('mobile');">
+                  <option value="KO">Korean</option>
+                  <option value="EN">English</option>
+                </select>
             </div>
         </div>
         <!--Contents-->
         <div class="content-container">
             <div class="top-section">
-                <p class="sec-text">Hello, I'm Taegyeong Kim. TG for short. I'm a junior web-developer who lives in Busan, Korea. This is my portfolio website where I put my best works.</p>
-                <p class="sec-text">I've completed 6-months of offline web design class for web publishers that contains HTML, CSS, Photoshop, and Illustrator.
-                The class was mainly about design, so I had to learn JavaScript myself. I'm currently learning JavaScript on SoloLearn and FreeCodeCamp.org.</p>
+                <p class="sec-text">Hello, I'm Taegyeong Kim. TG for short. I'm a junior web-developer who lives in Busan, Korea. Welcome to my portfolio!</p>
+                <p class="sec-text">I create simple and effective websites without using unnecessarily complicated and advanced codes.</p>
             </div>
         </div>
 
