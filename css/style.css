@@ -35,6 +35,10 @@ a {
     background-color: rgba(0, 0, 0, 0.35);
 }
 
+.spacing{
+    height: 80px;
+}
+
 /*--Header--*/
 .header-container {
     margin-top: 0;
@@ -234,6 +238,7 @@ a {
     /*toggle display: flex*/
     display: none;
     position: fixed;
+    font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     width: 100%;
     top: 0;
