@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+<head>
+    <!---Made with metatags.io--->
+    <!-- Primary Meta Tags -->
+    <title>Taegyeong Kim</title>
+    <meta name="title" content="Taegyeong Kim">
+    <meta name="description" content="Portfolio of Taegyeong Kim">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codertaegyeong.github.io/">
+    <meta property="og:title" content="Taegyeong Kim">
+    <meta property="og:description" content="Portfolio of Taegyeong Kim">
+    <meta property="og:image" content="img/site-thumb.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codertaegyeong.github.io/">
+    <meta property="twitter:title" content="Taegyeong Kim">
+    <meta property="twitter:description" content="Portfolio of Taegyeong Kim">
+    <meta property="twitter:image" content="img/site-thumb.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="nav-btn-toTop" onclick="toTop();">&uarr;</div>
+        <!--Header-->
+        <div class="header-container">
+            <!--Header Intro-->
+            <div class="head-intro">
+                <div class="overlay">
+                    <div class="overlay-title">Hi, I'm Taegyeong Kim.</div>
+                    <div class="overlay-subtext">I'm a junior web developer.</div>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="resp-menu">
+                <div class="nav-btn-menu" onclick="menu();">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="resp-links-container" id="navlink">
+                    <div class="links-resp"><a href="index.html">Home</a></div>
+                    <div class="links-resp"><a href="skills.html">Skills</a></div>
+                    <div class="links-resp"><a href="about.html">About Me</a></div>
+                    <div class="links-resp"><a href="projects.html">Projects</a></div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <div class="links-menu"><a href="index.html">Home</a></div>
+                <div class="links-menu"><a href="skills.html">Skills</a></div>
+                <div class="links-menu"><a href="about.html">About Me</a></div>
+                <div class="links-menu"><a href="projects.html">Projects</a></div>
+            </div>
+        </div>
+        <!--Contents-->
+        <div class="content-container">
+            <div class="top-section">
+                <p class="sec-text">Hello, I'm Taegyeong Kim. TG for short. I'm a junior web-developer who lives in Busan, Korea. Welcome to my portfolio!</p>
+                <p class="sec-text">I create simple and effective websites without using unnecessarily complicated and advanced codes.</p>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer-container">
+            <!-- Email -->
+            <div class="section-head">Contact Me</div>
+            <p class="email-container">taegyeongtgkim@gmail.com</p>
+            <!-- Social links -->
+            <div class="icon-container">
+                <a href="https://twitter.com/CoderTaegyeong" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://github.com/CoderTaegyeong" title="GitHub"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/taegyeong-kim-8521a8179/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-text">&copy; 2019 Taegyeong Kim</div>
+            <div class="footer-text-responsive">&copy; 2019 Taegyeong Kim</div>
+            <div class="to-top" onclick="toTop();" title="Beam me up"><i class="far fa-arrow-alt-circle-up"></i></div>
+        </div>
+    </div>
+</body>
+<script>
+    function menu() {
+        console.log("Menu");
+        var x = document.getElementById("navlink");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        console.log("ok");
+    }
+
+    function toTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+</html>
