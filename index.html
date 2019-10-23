@@ -1,7 +1,21 @@
 <html>
 <meta charset="utf-8">
-<meta name="description" content="With love, from Sweden">
-<meta name="author" content="Blackbeard">
+<meta name="title" content="Taegyeong Kim">
+<meta name="description" content="Portfolio of Taegyeong Kim">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://codertaegyeong.github.io/">
+<meta property="og:title" content="Taegyeong Kim">
+<meta property="og:description" content="Portfolio of Taegyeong Kim">
+<meta property="og:image" content="img/site-thumb.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://codertaegyeong.github.io/">
+<meta property="twitter:title" content="Taegyeong Kim">
+<meta property="twitter:description" content="Portfolio of Taegyeong Kim">
+<meta property="twitter:image" content="img/site-thumb.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Icons by Font Awesome. License CC-BY, refer to https://fontawesome.com/license -->
 
@@ -20,14 +34,16 @@
             font-weight: 400;
             cursor: default;
         }
+
         .page-container {
-            background: linear-gradient(45deg,#C33764, #1D2671);
+            background: linear-gradient(45deg, #C33764, #1D2671);
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             position: fixed;
         }
+
         .mouse-blocker {
             display: none;
             background: rgba(255, 255, 255, 0);
@@ -38,6 +54,7 @@
             position: fixed;
             z-index: 10000000;
         }
+
         .ui-container {
             color: #EBF5DF;
             display: flex;
@@ -53,6 +70,7 @@
             overflow: hidden;
             z-index: -98;
         }
+
         .anim-container {
             color: #EBF5DF;
             display: flex;
@@ -69,13 +87,16 @@
             overflow: hidden;
             z-index: -99;
         }
+
         .ui-title {
             font-size: 2em;
             margin-bottom: 30px;
         }
-        .ui-subtitle{
+
+        .ui-subtitle {
             font-size: 1.5em;
         }
+
         .ui-buttons-container {
             display: flex;
             flex-direction: row;
@@ -83,8 +104,9 @@
             align-items: center;
             text-align: center;
         }
+
         .ui-button-1,
-        .ui-button-2{
+        .ui-button-2 {
             position: relative;
             width: 120px;
             height: 120px;
@@ -98,8 +120,9 @@
             text-transform: uppercase;
             z-index: 2;
         }
+
         .ui-button-1:hover,
-        .ui-button-2:hover{
+        .ui-button-2:hover {
             transform: scale(1.25);
             transform-origin: center;
             background-color: #6936aa;
@@ -107,15 +130,18 @@
             line-height: 4.5em;
             color: black;
         }
+
         .icon {
             width: 80px;
             height: 80px;
             transform-origin: center;
             transform: translate(25%, 25%);
         }
+
         .ui-footer {
             margin-top: 20px;
         }
+
         .expand-circle {
             display: block;
             position: relative;
@@ -127,37 +153,45 @@
             transform: translate(10%, -70%) scale(0.1);
             z-index: -99;
         }
+
         .expand {
             animation: expand 2s;
             animation-fill-mode: forwards;
         }
+
         @keyframes expand {
             0% {
                 transform: translate(10%, -70%) scale(0.0);
                 opacity: 0;
             }
+
             1% {
                 transform: translate(10%, -70%) scale(0.0);
                 opacity: 1;
             }
+
             100% {
                 transform: translate(10%, -70%) scale(200);
                 opacity: 1;
             }
         }
+
         .shrink {
             animation: shrink 0.75s;
             animation-fill-mode: forwards;
         }
+
         @keyframes shrink {
             0% {
                 transform: scale(1.0);
             }
+
             100% {
                 transform: scale(0.0);
                 opacity: 0;
             }
         }
+
         .intro-container {
             color: #ffffff;
             display: flex;
@@ -176,6 +210,7 @@
             transition: all 0.5s;
             opacity: 1;
         }
+
         .warn-noscript {
             color: #ffffff;
             display: flex;
@@ -195,73 +230,91 @@
             opacity: 1;
             line-height: auto;
         }
+
         .rotate-screen {
             display: none;
         }
+
         .error-icon {
             margin-bottom: 30px;
         }
+
         .intro-elem {
             display: flex;
             flex-direction: row;
         }
+
         .anim-intro {
             animation: intro 2s;
             animation-fill-mode: forwards;
         }
+
         @keyframes intro {
             0% {
                 transform: scale(100);
                 opacity: 0;
             }
+
             20% {
                 transform: scale(1);
                 opacity: 1;
             }
+
             80% {
                 transform: scale(1);
                 opacity: 1;
             }
+
             100% {
                 transform: scale(1);
                 opacity: 1;
             }
         }
+
         .fade {
             animation: fade 0.7s;
             animation-fill-mode: forwards;
         }
+
         @keyframes fade {
             0% {
                 opacity: 1;
             }
+
             100% {
                 opacity: 0;
             }
         }
+
         .hide {
             display: none;
             transform: scale(0);
         }
+
         .flash {
             animation: flash 2s infinite;
             animation-timing-function: steps(1);
         }
+
         @keyframes flash {
             0% {
                 opacity: 1;
             }
+
             50% {
                 opacity: 0;
             }
+
             100% {
                 opacity: 0;
             }
         }
+
         .logo {
             min-width: 300px;
             max-width: 400px;
         }
+
         @media only screen and (max-width: 359px) {
             .screen-rotate {
                 color: #ffffff;
@@ -280,19 +333,23 @@
                 background: rgb(0, 0, 0);
                 line-height: 0.4em;
             }
+
             .intro-container {
                 display: none;
             }
         }
+
         @media only screen and (min-width: 360px) {
             .screen-rotate {
                 display: none;
                 transform: translate(99999px);
             }
+
             .rotate-icon {
                 display: none;
             }
         }
+
     </style>
 </head>
 
@@ -338,13 +395,23 @@
             <div class="ui-buttons-container">
                 <div class="ui-button-1" title="English" id="en-btn" onclick="expand('en-btn', 'ko-btn');">
                     <div class="icon" id="portfolio-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#f0f0f0"/><g fill="#d80027"><path d="M245 256h267c0-23-3-45-9-67H245v67zM245 122h229c-15-25-35-48-59-66H245v66zM256 512c60 0 116-21 159-56H97c43 35 99 56 159 56zM38 390h436c13-21 23-43 29-67H9c6 24 16 46 29 67z"/></g><path d="M119 40h23l-22 16 9 25-22-16-22 16 7-22c-19 16-36 35-49 56h7l-14 10-6 11 7 20-13-9-8 20 7 22h27l-22 16 9 25-22-15-13 9-2 32h256V0c-51 0-98 15-137 40zm10 190l-22-15-22 15 8-25-21-16h27l8-25 8 25h27l-22 16 9 25zm-9-100l9 26-22-16-22 16 8-26-21-15h27l8-26 8 26h27l-22 15zm100 100l-21-15-22 15 8-25-21-16h26l9-25 8 25h27l-22 16 8 25zm-8-100l8 26-21-16-22 16 8-26-21-15h26l9-26 8 26h27l-22 15zm0-74l8 25-21-16-22 16 8-25-21-16h26l9-26 8 26h27l-22 16z" fill="#0052b4"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <circle cx="256" cy="256" r="256" fill="#f0f0f0" />
+                            <g fill="#d80027">
+                                <path d="M245 256h267c0-23-3-45-9-67H245v67zM245 122h229c-15-25-35-48-59-66H245v66zM256 512c60 0 116-21 159-56H97c43 35 99 56 159 56zM38 390h436c13-21 23-43 29-67H9c6 24 16 46 29 67z" />
+                            </g>
+                            <path d="M119 40h23l-22 16 9 25-22-16-22 16 7-22c-19 16-36 35-49 56h7l-14 10-6 11 7 20-13-9-8 20 7 22h27l-22 16 9 25-22-15-13 9-2 32h256V0c-51 0-98 15-137 40zm10 190l-22-15-22 15 8-25-21-16h27l8-25 8 25h27l-22 16 9 25zm-9-100l9 26-22-16-22 16 8-26-21-15h27l8-26 8 26h27l-22 15zm100 100l-21-15-22 15 8-25-21-16h26l9-25 8 25h27l-22 16 8 25zm-8-100l8 26-21-16-22 16 8-26-21-15h26l9-26 8 26h27l-22 15zm0-74l8 25-21-16-22 16 8-25-21-16h26l9-26 8 26h27l-22 16z" fill="#0052b4" />
+                        </svg>
                     </div>
                     <div class="expand-circle" id="expand1"></div>
                 </div>
                 <div class="ui-button-2" title="한국어" id="ko-btn" onclick="expand('ko-btn', 'en-btn');">
                     <div class="icon" id="about-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#f0f0f0"/><path d="M345 256c0 22-40 78-89 78s-89-56-89-78a89 89 0 11178 0z" fill="#d80027"/><path d="M345 256a89 89 0 11-178 0" fill="#0052b4"/><path d="M350 335l24-24 16 16-24 23zM311 374l24-24 15 16-23 24zM398 382l23-24 16 16-23 24zM358 421l24-23 16 15-24 24zM374 358l24-23 15 15-23 24zM335 398l23-24 16 16-24 23zM398 177l-63-63 16-15 62 63zM335 162l-24-24 16-16 23 24zM374 201l-24-24 16-15 24 23zM382 114l-24-23 16-16 24 24zM421 154l-23-24 15-16 24 24zM91 358l63 63-16 16-63-63zM154 374l23 24-15 15-24-23zM114 335l24 23-16 16-23-23zM138 311l63 63-16 16-63-63zM154 91l-63 63-16-16 63-63zM177 114l-63 63-15-16 63-62zM201 138l-63 63-16-16 63-63z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <circle cx="256" cy="256" r="256" fill="#f0f0f0" />
+                            <path d="M345 256c0 22-40 78-89 78s-89-56-89-78a89 89 0 11178 0z" fill="#d80027" />
+                            <path d="M345 256a89 89 0 11-178 0" fill="#0052b4" />
+                            <path d="M350 335l24-24 16 16-24 23zM311 374l24-24 15 16-23 24zM398 382l23-24 16 16-23 24zM358 421l24-23 16 15-24 24zM374 358l24-23 15 15-23 24zM335 398l23-24 16 16-24 23zM398 177l-63-63 16-15 62 63zM335 162l-24-24 16-16 23 24zM374 201l-24-24 16-15 24 23zM382 114l-24-23 16-16 24 24zM421 154l-23-24 15-16 24 24zM91 358l63 63-16 16-63-63zM154 374l23 24-15 15-24-23zM114 335l24 23-16 16-23-23zM138 311l63 63-16 16-63-63zM154 91l-63 63-16-16 63-63zM177 114l-63 63-15-16 63-62zM201 138l-63 63-16-16 63-63z" /></svg>
                     </div>
                     <div class="expand-circle" id="expand2"></div>
                 </div>
@@ -383,6 +450,7 @@
             }
         }, 250);
     }
+
 </script>
 
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Taegyeong Kim</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!--<script src="js/jquery.slicknav.min.js"></script>
+    <script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>    
+<script src="js/jquery.sticky.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link href="css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <!-- Top menu -->
+        <div class="top-nav">
+            <!-- Mobile menu -->
+            <div class="resp-menu">
+                <div class="nav-btn-menu" onclick="menu();">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="resp-links-container" id="navlink">
+                    <div class="links-resp"><a href="#">Home</a></div>
+                    <div class="links-resp"><a href="#">About Me</a></div>
+                    <div class="links-resp"><a href="#">Projects</a></div>
+                    <div class="links-resp"><a href="#">Contact</a></div>
+                </div>
+            </div>
+            <!-- Top menu -->
+            <div class="nav-links">
+                <div class="links-menu"><a href="#">Home</a></div>
+                <div class="links-menu"><a href="#">About Me</a></div>
+                <div class="links-menu"><a href="#">Projects</a></div>
+                <div class="links-menu"><a href="#">Contact</a></div>
+            </div>
+            </div>
+        <div class="header-wrapper">
+            <div class="header">
+                <div class="header-text">
+                    <p class="emphasis">Hi,</p>
+                    <p>I'm <span class="name">Taegyeong Kim</span>.</p>
+                    <p>I'm a junior web developer.</p>
+                    <div class="click-btn">
+                        Click for More
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-wrapper">
+            <div class="section1">
+                <h1 class="section-title">About Me</h1>
+                <!--Insert smiling or professional photo of me-->
+                <p class="intro-text">
+                    I'm a college graduate, aiming to become a front-end developer. I'm inexperienced, so I can learn anything.
+                </p>
+                <div class="cards">
+                    <div class="card1">
+                        <h2>Determined</h2>
+                        <p>I'm strong-willed. When I get frustrated by something, I try to find solutions first. If I can't find one, I will make one.</p>
+                    </div>
+                    <div class="card2">
+                        <h2>Focused</h2>
+                        <p>I'm focused. If I have something important to do, I don't get distracted. When I read books or study JavaScript with my phone at the subway, I can keep my mind only focused on them.</p>
+                    </div>
+                    <div class="card3">
+                        <h2>Fast-Learner</h2>
+                        <p>I'm a fast-learner. I learn faster than most of the people. I didn't know German at all, but after I took German lessons, I started to pick up faster than others. I got A+ on the first exam.</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h1 class="section-title">Skills</h1>
+                    <!--Gradient Graphs with CSS animation-->
+                </div>
+            </div>
+            <div class="section2">
+                <h1 class="section-title">Works</h1>
+                <!--Grid with photos of my works, clickable, connected to another page of larger image(pop-up maybe?) or link of my work-->
+            </div>
+            <div class="footer-container">
+                <!--Social Network Icons linked to my LinkedIn, Twitter, Github, email(Gmail)-->
+                <p>Contact Me</p>
+                <div class="icon-container">
+                    <div class="email-container">johndoe.dev@example.com</div>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-github-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="nav-btn-toTop" onclick="toTop();">&uarr;</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function menu() {
+        console.log("Menu");
+        var x = document.getElementById("navlink");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        console.log("ok");
+    }
+
+    function toTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</html>
