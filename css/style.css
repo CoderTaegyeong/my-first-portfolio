@@ -173,7 +173,9 @@ a {
     font-family: 'Muli', sans-serif;
     margin: 30px;
     color: azure;
-    text-align: justify;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: left;
 }
 
 /*--Middle Section--*/
@@ -329,6 +331,16 @@ a {
 
     .nav-btn-menu {
         padding: 4px;
+    }
+
+    .sec-text {
+        font-size: 1em;
+        font-family: 'Muli', sans-serif;
+        margin: 30px;
+        color: azure;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        text-align: left;
     }
 
     .overlay {
