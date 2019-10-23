@@ -13,11 +13,12 @@ a {
     text-decoration: none;
 }
 
-.link-emp{
+.link-emp {
     color: aquamarine;
     text-decoration: none;
     font-weight: bold;
 }
+
 .page-container {
     display: flex;
     position: absolute;
@@ -35,7 +36,7 @@ a {
     background-color: rgba(0, 0, 0, 0.35);
 }
 
-.spacing{
+.spacing {
     height: 80px;
 }
 
@@ -71,7 +72,7 @@ a {
 .nav-links a {
     margin: auto;
     font-size: 1.2em;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .links-menu {
@@ -149,15 +150,17 @@ a {
     margin-bottom: 20px;
 }
 
-.section-subtitle{
+.section-subtitle {
     font-size: 1.7em;
     font-family: 'Muli', sans-serif;
 }
-.bold-emp{
+
+.bold-emp {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
 }
+
 .top-section {
     background-color: rgb(30, 30, 30);
     width: 70%;
@@ -261,6 +264,41 @@ a {
     font-size: 3em;
 }
 
+
+.list-elem-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+    border: 2px solid #333333;
+}
+
+.elem-container-sub {
+    display: flex;
+    flex-direction: row;
+}
+
+.elem-container-inner {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.list-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list-thumb {
+    margin: 15px 0px 0px 15px;
+}
+
+.big {
+    font-size: 1.5em;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
 
     .links-menu,
@@ -288,6 +326,7 @@ a {
         height: 80px;
         background: rgb(70, 70, 70);
     }
+
     .nav-btn-menu {
         padding: 4px;
     }
@@ -349,6 +388,7 @@ a {
         display: block;
         cursor: pointer;
     }
+
     .to-top {
         display: none;
     }
