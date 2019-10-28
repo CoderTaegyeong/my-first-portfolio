@@ -13,10 +13,10 @@ Hi, I'm Taegyeong Kim. I'm currently 23 years old, and a college graduate who do
 안녕하세요, 김태경입니다. 저는 23살이고 대학교를 졸업한지 얼마되지 않아 직무 경험이 없습니다. 제 전공은 영어이지만, 웹 퍼블리셔를 위한 웹 디자인 수업을 6개월동안 들었습니다. 9월 30일에 정식으로 마쳤어요. 더 자세한 정보를 원하시면 https://linkedin.com/in/taegyeong-kim-8521a8179 제 링크드인 프로필을 보시길 바랍니다. 자유롭게 하시고 싶은 말이 있다면 트위터 계정으로 말씀하시거나 링크드인-포트폴리오 하단에도 있습니다-에 있는 제 이메일 주소로 이메일을 보내주세요. 가능하다면 해외 취업을 하고 싶지만 현재 금전적인 문제가 있어서 국내에서 경험을 먼저 쌓고 해외로 이직할 예정입니다.
 
 ## About this website
-I started making this on September 19th, 2019. I keep updating to perfect it, and save it for the future.
+I started making this on September 19th, 2019. I keep updating to perfect it, and save it for the future. I will overhaul the entire projects because they are imperfect.(October 29th, 2019)
 
 ## 이 웹 사이트에 대하여
-이 포트폴리오 웹 사이트는 2019년 9월 19일에 처음으로 만들기 시작했으며, 나중을 대비하여 계속 업데이트 하고 있습니다.
+이 포트폴리오 웹 사이트는 2019년 9월 19일에 처음으로 만들기 시작했으며, 나중을 대비하여 계속 업데이트 하고 있습니다. 현재 코딩 관련 프로젝트가 너무 부실한 것 같아 수정할 계획입니다.(2019년 10월 29일)
 
 ## How to Use
 Open index.html on any browser to see the website, or just go to https://codertaegyeong.github.io. If you plan to download, make sure you put all files in one folder. Do not change the file paths.
